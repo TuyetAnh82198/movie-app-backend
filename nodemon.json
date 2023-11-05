@@ -2,6 +2,6 @@
   "env": {
     "MONGDB_USER": "tuyetanh14102023",
     "MONGODB_PASS": "PDqQAHKRoaGJfjSk",
-    "CLIENT_APP": "http://localhost:3000"
+    "CLIENT_APP": "https://movie-app-frontend-8zde.onrender.com"
   }
 }
