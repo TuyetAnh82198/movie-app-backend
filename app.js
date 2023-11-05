@@ -42,7 +42,7 @@ app.use(compression());
 
 app.use("/movies", movies);
 app.use((req, res) => {
-  return res.redirect("http://localhost:3000/123");
+  return res.redirect(`${process.env.CLIENT_APP}/123`);
 });
 mongoose
   .connect(

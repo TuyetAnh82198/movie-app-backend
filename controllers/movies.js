@@ -21,7 +21,7 @@ const getLastedMovies = async (req, res) => {
     return res.status(200).json({ result: latestMovies });
   } catch {
     (err) => {
-      return res.redirect("http://localhost:3000/server-error");
+      return res.redirect(`${process.env.CLIENT_APP}/server-error`);
     };
   }
 };
@@ -39,7 +39,7 @@ const getTrendingMovies = async (req, res) => {
       totalPages: Math.ceil(trendingMovies.length / 20),
     });
   } catch (err) {
-    return res.redirect("http://localhost:3000/server-error");
+    return res.redirect(`${process.env.CLIENT_APP}/server-error`);
   }
 };
 //Hàm trả về danh sách phim dựa theo rating
@@ -58,7 +58,7 @@ const getMoviesByRating = async (req, res) => {
       totalPages: Math.ceil(moviesGotByRating.length / 20),
     });
   } catch (err) {
-    return res.redirect("http://localhost:3000/server-error");
+    return res.redirect(`${process.env.CLIENT_APP}/server-error`);
   }
 };
 //Hàm trả về danh sách phim Hành động
@@ -79,7 +79,7 @@ const getMovies = async (req, res) => {
       totalPage: Math.ceil(movies.length / 20),
     });
   } catch (err) {
-    return res.redirect("http://localhost:3000/server-error");
+    return res.redirect(`${process.env.CLIENT_APP}/server-error`);
   }
 };
 //Hàm trả về thông tin của video của phim được click để hiển thị trailer
@@ -102,7 +102,7 @@ const getVideo = async (req, res) => {
       }
     }
   } catch (err) {
-    return res.redirect("http://localhost:3000/server-error");
+    return res.redirect(`${process.env.CLIENT_APP}/server-error`);
   }
 };
 //Hàm trả về danh sách phim thỏa điều kiện tìm kiếm
@@ -203,7 +203,7 @@ const searchMovies = async (req, res) => {
     // );
     // console.log(movies.slice(0, 2));
   } catch (err) {
-    return res.redirect("http://localhost:3000/server-error");
+    return res.redirect(`${process.env.CLIENT_APP}/server-error`);
   }
 };
 
