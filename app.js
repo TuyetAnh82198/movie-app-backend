@@ -10,9 +10,9 @@ const app = express();
 
 app.use(helmet());
 app.use(cors());
+app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(compression());
 
 // // Chỉnh sửa file json danh sách phim trước khi tải lên cơ sở dữ liệu để sử dụng
 // // Chuyển từ [1,2,3] thành [{_id: 1},{_id: 2},{_id: 3}]

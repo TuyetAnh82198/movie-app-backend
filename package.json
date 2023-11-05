@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production MONGDB_USER=tuyetanh14102023 MONGODB_PASS=PDqQAHKRoaGJfjSk CLIENT_APP=http://localhost:3000 nodemon app.js"
+    "start": "NODE_ENV=development MONGDB_USER=tuyetanh14102023 MONGODB_PASS=PDqQAHKRoaGJfjSk CLIENT_APP=http://localhost:3000 nodemon app.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +16,7 @@
     "helmet": "^7.0.0",
     "moment": "^2.29.4",
     "mongodb": "^6.2.0",
-    "mongoose": "^8.0.0",
+    "mongoose": "^7.6.3",
     "nodemon": "^3.0.1"
   }
 }
